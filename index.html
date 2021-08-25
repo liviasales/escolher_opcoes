@@ -11,26 +11,27 @@
 
             <h1>Escolher opções</h1>
 
-            <form action="action_page.php">
+            <form action="action_page.php" method="POST" >
             <p>Favor selecionar o que prefere:</p>
-              <input type="radio" id="opcao1" name="fav_language" value="Opção 1">
+              <input type="radio" id="opcao1" name="fav_option" value="1">
               <label for="opcao1">Opção 1</label><br>
-              <input type="radio" id="opcao2" name="fav_language" value="Opção 2">
+              <input type="radio" id="opcao2" name="fav_option" value="2">
               <label for="opcao2">Opção 2</label><br>
-              <input type="radio" id="opcao3" name="fav_language" value="Opção 3">
+              <input type="radio" id="opcao3" name="fav_option" value="3">
               <label for="opcao3">Opção 3</label>
 
             <br>  
 
             <p>Selecione mais de uma opção a seguir:</p>
-            <input type="checkbox" name="primeiro" value="1">
+            <input type="checkbox" name="fav_item1" value="true">
             <label for="item1"> Item 1</label><br>
-            <input type="checkbox" name="segundo" value="2">
+            <input type="checkbox" name="fav_item2" value="true">
             <label for="item2"> Item 2</label><br>
-            <input type="checkbox" name="terceiro" value="3">
+            <input type="checkbox" name="fav_item3" value="true">
             <label for="item3"> Item 3</label><br><br>
             <input type="checkbox" class="btn-check" id="btn-check-2" checked autocomplete="off">
-            <label class="btn btn-primary" for="btn-check-2">Enviar</label>
+            
+            <input class="btn btn-primary" for="btn-check-2"  type="submit" value="Enviar">
             
             </form>
 
